@@ -1,0 +1,2 @@
+PostgreSQL 16.0
+Python 3.11
