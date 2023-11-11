@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+
+{% block title %}
+    Homechirp
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <a href="{% url 'admin:index' %}"><span class='app-name'>HOMECHIRP</span> administration</a>
+    </h1>
+    {% if user.is_anonymous %}
+        {% include "admin/color_theme_toggle.html" %}
+    {% endif %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
